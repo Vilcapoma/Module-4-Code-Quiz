@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", intial-scale="1.0">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="scores" id="high-score"></div>
+            <div class="timer" id="timer-start">Timer: 60</div>
+        </header>
+        <div id="start">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Answer the following questions within a time spam, but keep in mind that the answer you select will effect your score given to you!</p>
+        <button class="btn" id="Begin-quiz">Begin Quiz</button>
+        </div>
+
+        <div class="" id="multiple-choice">
+            <div id="timer">Time left: </div>
+            <h1 id = "question-given">Question given</h1>
+            <ul>
+                <li><button class ="choices button" id="answer_btn1" value="a">Answer1</button></li>
+                <li><button class ="choices button" id="answer_btn2" value="b">Answer2</button></li>
+                <li><button class ="choices button" id="answer_btn3" value="c">Answer3</button></li>
+                <li><button class ="choices button" id="answer_btn4" value="d">Answer4</button></li>
+            </ul>
+        </div>
+
+        <section class="submit_page" id="submit_page">
+        <div id="results">
+            <h2 id="finish">All Done!</h2>
+            <p id="final_score">Final Score: </p>
+            <p>
+                Input initials
+                <input  type="text" id="initial">
+                <button clas="btn" id="enter-score" type="'submit">Submit</button>
+            </p>
+        </div>    
+        </section>
+        <div id="quiz-info">
+            <h1>High Score</h1>
+            <ul id="display-score"></ul>
+            <input type="button" class="btn" value="Go Back" />
+            <button class="btn">Clear High Score</button>
+        </div>
+        <script src="./assets/JS/script.js"></script>
+    </body>
+</html>
